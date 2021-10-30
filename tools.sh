@@ -149,7 +149,7 @@ systemd --daemon-reload
 }
 
 bbr(){
-  wget -N "http://sh.neko.sbs:1111/bbr/bbr.sh" -O bbr.sh && bash bbr.sh
+  wget -N "https://raw.githubusercontent.com/Netflixxp/tool/main/bbr.sh" -O bbr.sh && bash bbr.sh
 }
 
 Update_Shell(){
