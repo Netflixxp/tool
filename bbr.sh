@@ -230,7 +230,7 @@ detele_kernel_head(){
 	fi
 }
 installbbr(){
-	kernel_version="5.9.6"
+	kernel_version="5.14.9"
 	bit=`uname -m`
 	rm -rf bbr
 	mkdir bbr && cd bbr
