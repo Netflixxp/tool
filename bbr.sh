@@ -230,7 +230,7 @@ detele_kernel_head(){
 	fi
 }
 installbbr(){
-	kernel_version="5.14.9"
+	kernel_version="5.11.1"
 	bit=`uname -m`
 	rm -rf bbr
 	mkdir bbr && cd bbr
@@ -249,10 +249,10 @@ installbbr(){
 		
 	elif [[ "${release}" == "ubuntu" || "${release}" == "debian" ]]; then
 		if [[ ${bit} = "x86_64" || ${bit} = "aarch64" ]]; then
-			kernel_version="5.14.9"
+			kernel_version="5.11.1"
 			detele_kernel_head
-			headurl="https://github.com/ylx2016/kernel/releases/download/Ubuntu_Kernel_5.14.15_latest_bbr_2021.10.29-0937/linux-headers-5.14.15_5.14.15-1_amd64.deb"
-			imgurl="https://github.com/ylx2016/kernel/releases/download/Ubuntu_Kernel_5.14.15_latest_bbr_2021.10.29-0937/linux-image-5.14.15_5.14.15-1_amd64.deb"
+			headurl="https://github.com/ylx2016/kernel/releases/download/Ubuntu_Kernel_5.15.1_latest_bbr_2021.11.08-1534/linux-headers-5.15.1_5.15.1-1_amd64.deb"
+			imgurl="https://github.com/ylx2016/kernel/releases/download/Ubuntu_Kernel_5.15.1_latest_bbr_2021.11.08-1534/linux-image-5.15.1_5.15.1-1_amd64.deb"
 			echo -e "正在检查headers下载连接...."
 			checkurl $headurl
 			echo -e "正在检查内核下载连接...."
